@@ -2,7 +2,7 @@
 title: 查看提交历史
 ---
 
-## git log
+ > git log
 使用 `git log` 列出历史提交记录:
 ```sh
 $ git log

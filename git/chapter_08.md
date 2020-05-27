@@ -27,10 +27,14 @@ ssh-keygen -t rsa -C "731509863@qq.com"
 4. 登陆github，在设置中添加 ssh ，注意是将 `id_ras.pub` 即公钥交给github。
 
 <img :src="$withBase('/tools/git/ssh_login/添加公钥到github.jpg')">
+![](https://github.com/mydb123/gitBook/blob/master/photo/git/添加公钥到github.jpg "添加公钥到github.jpg")
+
 
 5. 测试
 
 <img :src="$withBase('/tools/git/ssh_login/测试是否成功添加.jpg')">
+![](https://github.com/mydb123/gitBook/blob/master/photo/git/测试是否成功添加.jpg "测试是否成功添加.jpg")
+
 
 
 
@@ -114,3 +118,5 @@ git commit -m '备注信息' //备注信息
 git push //推送上去了  
 git pull //更新代码 
 <img :src="$withBase('/tools/git/ssh_login/基本命令.png')">
+![](https://github.com/mydb123/gitBook/blob/master/photo/git/基本命令.png "基本命令.png")
+

@@ -89,10 +89,8 @@
   * [Git 基础配置](git/chapter_02.md)
   * [Git 创建仓库](git/chapter_03.md)
   * [Git 基本使用](git/chapter_04.md)  
-  * [Git 基本使用](git/chapter_05.md)
+  * [Git 分支管理](git/chapter_05.md)
   * [Git 查看提交历史](git/chapter_06.md)    
   * [Git 标签](git/chapter_07.md)
   * [Github](git/chapter_08.md)    
   * [svn](git/chapter_09.md)     
-<!-- * [数据结构]()
-  * [树和二叉树](datastructure/tree.md)   -->
