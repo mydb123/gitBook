@@ -135,9 +135,6 @@ title: 组件
 2. 子向父$emit
 
 ``` html
-
-  <html lang="en">
-
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -184,9 +181,6 @@ title: 组件
           })
       </script>
   </body>
-
-  </html>
-
 ```
 
 注:兄弟组件传值是bus
