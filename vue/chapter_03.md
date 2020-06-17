@@ -134,57 +134,57 @@ title: 组件
 ```
 2. 子向父$emit
 ```html
-<!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+  </head>
 
-<body>
-    <div id="app">
-        父亲的资产为------------{{ money }}
-        <sub-a @send="editMoney"></sub-a>
-    </div>
-    <script src="js/vue.js"></script>
-    <script>
-        Vue.component('sub-a', {
-            data() {
-                return {
-                    submoney: 100000000000
-                }
-            },
-            template: `
-      <div>
-      我是子组件我的资产为----------{{ submoney }}
-      <button @click="sendMoney">给父亲钱</button>
+  <body>
+      <div id="app">
+          父亲的资产为------------{{ money }}
+          <sub-a @send="editMoney"></sub-a>
       </div>
-      `,
-            methods: {
-                sendMoney() {
-                    // $emit 一个触发当前组件标签上的一个自定义事件
-                    this.$emit('send', this.submoney)
-                }
-            }
-        })
-        new Vue({
-            el: '#app',
-            data: {
-                money: 0
-            },
-            methods: {
-                editMoney(m) {
-                    this.money = m
-                }
-            }
-        })
-    </script>
-</body>
+      <script src="js/vue.js"></script>
+      <script>
+          Vue.component('sub-a', {
+              data() {
+                  return {
+                      submoney: 100000000000
+                  }
+              },
+              template: `
+        <div>
+        我是子组件我的资产为----------{{ submoney }}
+        <button @click="sendMoney">给父亲钱</button>
+        </div>
+        `,
+              methods: {
+                  sendMoney() {
+                      // $emit 一个触发当前组件标签上的一个自定义事件
+                      this.$emit('send', this.submoney)
+                  }
+              }
+          })
+          new Vue({
+              el: '#app',
+              data: {
+                  money: 0
+              },
+              methods: {
+                  editMoney(m) {
+                      this.money = m
+                  }
+              }
+          })
+      </script>
+  </body>
 
-</html>
+  </html>
+
 ```
 注:兄弟组件传值是bus
 
